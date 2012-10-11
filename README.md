@@ -17,6 +17,7 @@ Commands
 - `!google` - google query
 - `!remind` - set a reminder. use `10h` format. i.e. `!remind 1h GET DA MEATLOAF OUT DA OVEN`
 - `!up` - uptime
+- `!tweetstream` - {start|stop|follow|unfollow|unfollow_all} blasts tweets
 - `!contributors` - list of contributors
 
 Other stuff
