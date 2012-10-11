@@ -35,8 +35,10 @@ class TweetStreamer
     if block_given?          
       stop
       ids = Tweeple.twitter_ids
-      @client.filter(:follow => ids) do |status|
-        callback.call(status)
+      @client.follow(ids) do |status|
+        if ids.include? status.user.id
+          callback.call(status)
+        end
       end
     end
   end
